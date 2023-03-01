@@ -1,0 +1,205 @@
+\documentclass[10pt]{article}
+\usepackage{charter}
+\usepackage{libertine}
+\usepackage{hyperref}
+\hypersetup{
+    bookmarks=false,         % show bookmarks bar?
+    unicode=false,          % non-Latin characters in Acrobats bookmarks
+    pdftoolbar=false,        % show Acrobats toolbar?
+    pdfmenubar=true,        % show Acrobats menu?
+    pdffitwindow=false,     % window fit to page when opened
+    pdfstartview={FitH},    % fits the width of the page to the window
+    pdftitle={},    % title
+    pdfauthor={Daria Shipilina},     % author
+    pdfsubject={},   % subject of the document
+    pdfcreator={},   % creator of the document
+    pdfproducer={}, % producer of the document
+    pdfkeywords={ }{}, % list of keywords
+    pdfnewwindow=true,      % links in new window
+    colorlinks=true,       % false: boxed links; true: colored links
+    linkcolor=black,          % color of internal links (change box color with linkbordercolor)
+    citecolor=blue,        % color of links to bibliography
+    filecolor=magenta,      % color of file links
+    urlcolor=blue           % color of external links
+}
+% biblio-ref 
+%\usepackage[round]{natbib}
+%\bibliographystyle{plainnat}
+
+\usepackage{fullpage}
+\usepackage[resetlabels]{multibib}
+\usepackage[ManyBibs]{currvita}
+%\usepackage[dvips]{color}
+%\usepackage[T2A]{fontenc}
+%\usepackage[english,russian]{babel}
+\usepackage{amsfonts,amssymb,graphicx}
+%\usepackage{multicol}
+\usepackage[rflt]{floatflt}
+% Initialize each paper type for which you need a bibliography.
+% Just a dummy parameter is necessary.
+\usepackage{lastpage,fancyhdr}
+\date{}
+\newcites{refpaper}{foo}
+\newcites{unrefpaper}{foo}
+\newcites{journal}{foo}
+\newcites{techreport}{foo}
+\newcites{submitpaper}{foo}
+\newcites{classproject}{foo}
+
+% Better for lists with 1-2 items and short descriptions
+\newenvironment{sublist}{%
+	\begin{list}{}{%
+		\setlength{\itemsep}{0em}\setlength{\parsep}{0em}%
+		\setlength{\topsep}{0em}\setlength{\parskip}{0em}%
+	}%
+}%
+{ \end{list} }
+
+% Better for lists with more than 2 items and/or long descriptions
+\newenvironment{subbulletlist}{%
+	\begin{list}{\labelitemii}{%
+		\setlength{\topsep}{\itemsep}\setlength{\parskip}{\parsep}%
+	}%
+}%
+{ \end{list} }
+%Fancy package for page enumeration and headers
+\pagestyle{fancy}
+%\pagestyle{empty}
+%\cfoot{Page \thepage\ of \pageref{LastPage}}
+\setcounter{page}{23}
+\cfoot{\thepage\ }
+%\cfoot{}
+\lhead{\Large \textbf {Nicholas H. Barton}}
+\chead{{\textbf{\large \itshape Curriculum Vitae  }}}%Curriculum %Vitae 
+\voffset=-1.cm
+%\textheight = 670pt
+%\footskip = 60pt
+%\headheight=18pt
+\textheight = 670pt
+%\voffset=1.25cm
+\headsep=26pt
+\footskip = 25pt
+\begin{document}
+% Specify the bibtex style that you want for each paper type
+\bibliographystyle{unsrt}
+\bibliographystylerefpaper{unsrt}
+\bibliographystyleunrefpaper{unsrt}
+\bibliographystylesubmitpaper{unsrt}
+\bibliographystylejournal{unsrt}
+\bibliographystyletechreport{unsrt}
+\bibliographystyleclassproject{ieeetr}
+
+% We'll use this length to change the defaults in some of our lists.
+\newlength{\oldcvlabelwidth}
+\renewcommand*{\cvbibname}{}
+
+% This is what will appear at the very top of your CV.
+
+
+
+\begin{cv}
+
+
+
+\begin{cvlist}{Contact}
+    \item Am Campus 1\\
+     Klosterneuburg, Austria 3400\\
+      phone: +43 2243 9000-3001\\
+      e-mail: nick.barton@ist.ac.at\\%daria.sh@berkeley.edu
+      web-site: ist.ac.at/research-group-pages/barton-group
+\end{cvlist}
+
+\begin{cvlist}{Main Areas of Research}
+\item My focus has been to understand \textbf{hybrid zones}: narrow regions in which distinct populations meet, mate and produce hybrids.  I have worked on a variety of field systems, including grasshoppers (\textit{Podisma pedestris}), toads (\textit{Bombina bombina/variegata}), butterflies (\textit{Heliconius erato} and \textit{H.melpomene}), and snapdragons (\textit{Antirrhinum majus}).  This led naturally to development of \textbf{mathematical models} for how populations evolve when they extend through space, and when large numbers of genes interact.  These models have been applied to a wide range of questions, and in particular, to \textbf{speciation}, and to the  \textbf{quantitative genetics} of complex traits.  Key components of my present work are: i) a long-term study of the Antirrhinum hybrid zone, and ii) development of methods for inferring population structure and selection from DNA sequence variation, from both natural and experimental populations.
+\end{cvlist}
+
+\begin{cvlist}{Academic Career}
+\item[2015 -- present] \textbf{Dean of Graduate School}\\
+\textit{Institute of Science and Technology Austria (IST)}, Austria
+\item[2008 -- present] \textbf{Professor}, \textit{Institute of Science and Technology (IST)}, Austria
+\item[2000 ‐- 2010] \textbf{Personal Chair}, Institute of Evolutionary Biology\\
+ \textit{University of Edinburgh}, UK
+\item[1990 ‐- 2000]  \textbf{Darwin Trust Fellow}, Institute of Evolutionary Biology\\
+ \textit{University of Edinburgh}, UK
+\item[1982 ‐- 1990]  \textbf{Lecturer/Reader}, Department of Genetics, 
+ \textit{University College London}, UK
+\item[1979 ‐- 1982] \textbf{Research Fellowship},  \textit{Girton College}, UK
+\item[1976 -- 1979]   \textbf{Ph.D. in Biology} (Supervised by Dr. G.M. Hewitt)\\
+       \textit{University of East Anglia}, UK
+        \begin{sublist}
+     		\item Thesis:~A narrow hybrid zone in the alpine grasshopper \textit{Podisma pedestris}
+	       \end{sublist}
+\item[1973 ‐- 1976] \textbf{B.A. (First Class) in Natural Sciences (Genetics)}\\
+              \textit{University of Cambridge}, UK   
+\end{cvlist}
+
+\noindent{\bf \large Additional research achievements}
+\begin{enumerate}
+\item \textbf{Scientific awards}:  Erwin Schrodinger Prize (2013), \textit{Austrian Academy of Sciences}; Mendel Medal (2013),  \textit{Leopoldina}, Darwin‐Wallace Medal (2009), \textit{Linnean Society of London}; Darwin Medal (2006), \textit{The Royal Society}; Zoological Society Scientific Medal (1992); American Society of Naturalists President's Award (joint with Mark Kirkpatrick) (1998); David Starr Jordan Prize (joint with S. Pacala),(1994); Linnean Society Bicentennial Medal (1985). 
+
+\item \textbf{Academic Memberships and community service}: Elected President, \textit{Society for the Study of Evolution} (2001, on Council 2000‐2002); Elected Vice‐President, \textit{Society for the Study of Evolution} (1989); Chair, \textit{Human Frontiers Fellowship panel}(2013-2016);         
+Chair, \textit{ERC Starting Grants Panel LS8 }(2013 ‐- present); Elected President, \textit{Royal Society, Biological Sciences Awards Committee} (2009‐2011), Co‐Chair, \textit{Portuguese Foundation for Science and Technology (FCT)}, Chair, \textit{Royal Society Research Grants Committee (Board H)} (2004 ‐ 2006).
+
+\item \textbf{Editorships}: Senior Editor, \textit{Genetics} (2016 -- present), Associate Editor, \textit{Molecular Ecology} 013 ‐- present], Associate Editor, \textit{Genetics} (2013 -- present), Editorial Board, \textit{Philosophical Transactions of the Royal Society B} (2010 ‐- 2015), Handling Editor, \textit{Evolution} (2008‐2011), Editorial Board, PLoS Biology (2004 ‐ 2007),  Editorial Board, \textit{American Naturalist} (2003),  Editorial Board, \textit{Journal of Evolutionary Biology} (1997‐2000).
+
+\item \textbf{Recent Grants}: 2010‐2015  -- ERC Advanced Grant ``Information and Evolution”, \texteuro1.9M, 2010‐2014 -- Natural Selection in Spatially Structured Populations, (EPSRC 1013091 \texteuro215K), with Alison Etheridge, 2014‐2018 -- FP7 FET grant SAGE ``Speed of Adaptation in Population Genetics and Evolutionary Algorithms”, grant with T. Paixao (IST), Per Kristian Lehre (Nottingham), Tobias Friedrich (Jena), Dirk Sudholt (Sheffield). (\texteuro366K)
+
+\end{enumerate} 
+
+
+\begin{cvlist}{Publications}
+\item
+\end{cvlist}
+
+
+\textbf{\quad 10 Most Important Scientific Publications}
+            \begin{enumerate}%{sublist}{enumerate}	
+\item Barton, N.H. 2017. How does epistasis influence the response to selection? Heredity 118.1 (2017): 96-109. \href{http://dx.doi.org/10.1038/hdy.2016.109}{doi:10.1038/hdy.2016.109}
+\item Charlesworth, D., Barton, N.H., Charlesworth, B. 2017. The sources of adaptive evolution. Proc. Roy. Soc. (Lond.) B 284: 2016.2864. \href{http://dx.doi.org/doi: 10.1098/rspb.2016.2864}{doi:doi: 10.1098/rspb.2016.2864}
+\item Ringbauer, H., Coop, G., Barton, N. H.. (2017). Inferring recent demography from isolation by distance of long shared sequence blocks. Genetics 205(3):1335-1351 \href{http://dx.doi.org/10.1534/genetics.116.196220}{doi:10.1534/genetics.116.196220}
+\item Paixao, T., Barton, N.H. 2016. The effect of gene interactions on the long-term response to selection. PNAS 113: 4422-4427 \href{http://dx.doi.org/10.1073/pnas.1518830113}{doi:10.1073/pnas.1518830113}
+\item Paixao, T., Badkobehe, G., Barton, N.H., Dolgan, C., Dang, D.C., Friedrich, T., Lehre, P.K., Sudholt, D., Trubenova, B. 2015. Towards a unifying framework for evolutionary processes. J. Theor. Biol. 383: 28-43.\\ \href{http://dx.doi.org/doi:10.1016/j.jtbi.2015.07.011}{doi:10.1016/j.jtbi.2015.07.011}
+\item Barton, N.H. (2009) Why sex and recombination? Cold Spring Harbor Symposia Quant. Biol. 74 \\ \href{http://dx.doi.org/doi: 10.1101/sqb.2009.74.030}{doi: 10.1101/sqb.2009.74.030}
+\item Barton, N.H., Briggs, D.E.G., Eisen, J.A., Goldstein, D.B., Patel, N.H. (2007) Evolution. Cold Spring Harbor Laboratory Press. ISBN-13: 9780879696849
+\item Kirkpatrick, M., Johnson, T. Barton, N.H. (2002) General models of multilocus evolution. Genetics 161: 1727-1750 PMID: 12196414 
+\item Coyne, J.A., N.H. Barton, and M. Turelli. (1997) A critique of Wright's shifting balance theory of evolution. Evolution 51: 643-671. \href{http://dx.doi.org/10.1111/j.1558-5646.1997.tb03650.x}{doi:10.1111/j.1558-5646.1997.tb03650.x}
+\item Barton, N. H. (1995) Linkage and the limits to natural selection. Genetics 140: 821-841. PMID: 7498757
+\end{enumerate}	
+
+
+%\begin{cvlist}{Teaching Experience}
+
+%\end{cvlist}
+
+%\setlength{\oldcvlabelwidth}{\cvlabelwidth}
+%\setlength{\cvlabelwidth}{6em}
+
+
+
+
+
+% Reset the label indentation
+%\newpage
+\setlength{\cvlabelwidth}{\oldcvlabelwidth}
+
+
+%\begin{cvlist}{Personal Information}
+%    \item Date of birth:  August 21, 1988\\
+          %Citizenship:  Russia \\
+ %         Languages: English, Russian.
+%\end{cvlist}
+%\begin{cvlist}{Personal Information}
+ %   \item Date of birth:  January 30th, 1986\\
+ %         Citizenship:  Ukraine \\
+ %         Languages: English (fluent), Russian (native), Ukrainian (native), German (basic)
+%\end{cvlist}
+
+%\begin{cvlist}{Personal Interests}
+%\item  Reading, Travelling, Music
+%\end{cvlist}
+%\footskip = -10pt
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{cv}
+\end{document}
+

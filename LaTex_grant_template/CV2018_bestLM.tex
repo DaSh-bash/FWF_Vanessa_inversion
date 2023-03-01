@@ -1,0 +1,452 @@
+\documentclass[10pt]{article}
+\usepackage{charter}
+\usepackage{fullpage}
+\usepackage{hyperref}
+\hypersetup{
+    bookmarks=false,         % show bookmarks bar?
+    unicode=false,          % non-Latin characters in Acrobats bookmarks
+    pdftoolbar=false,        % show Acrobats toolbar?
+    pdfmenubar=true,        % show Acrobats menu?
+    pdffitwindow=false,     % window fit to page when opened
+    pdfstartview={FitH},    % fits the width of the page to the window
+    pdftitle={},    % title
+    pdfauthor={Daria Shipilina},     % author
+    pdfsubject={},   % subject of the document
+    pdfcreator={},   % creator of the document
+    pdfproducer={}, % producer of the document
+    pdfkeywords={ }{}, % list of keywords
+    pdfnewwindow=true,      % links in new window
+    colorlinks=true,       % false: boxed links; true: colored links
+    linkcolor=black,          % color of internal links (change box color with linkbordercolor)
+    citecolor=blue,        % color of links to bibliography
+    filecolor=magenta,      % color of file links
+    urlcolor=blue           % color of external links
+}
+\usepackage[resetlabels]{multibib}
+\usepackage[ManyBibs]{currvita}
+%\usepackage[dvips]{color}
+%\usepackage[T2A]{fontenc}
+%\usepackage[english,russian]{babel}
+\usepackage{amsfonts,amssymb,graphicx}
+%\usepackage{multicol}
+\usepackage[rflt]{floatflt}
+% Initialize each paper type for which you need a bibliography.
+% Just a dummy parameter is necessary.
+\usepackage{lastpage,fancyhdr}
+\date{}
+\newcites{refpaper}{foo}
+\newcites{unrefpaper}{foo}
+\newcites{journal}{foo}
+\newcites{techreport}{foo}
+\newcites{submitpaper}{foo}
+\newcites{classproject}{foo}
+
+% Better for lists with 1-2 items and short descriptions
+\newenvironment{sublist}{%
+	\begin{list}{}{%
+		\setlength{\itemsep}{0em}\setlength{\parsep}{0em}%
+		\setlength{\topsep}{0em}\setlength{\parskip}{0em}%
+	}%
+}%
+{ \end{list} }
+
+% Better for lists with more than 2 items and/or long descriptions
+\newenvironment{subbulletlist}{%
+	\begin{list}{\labelitemii}{%
+		\setlength{\topsep}{\itemsep}\setlength{\parskip}{\parsep}%
+	}%
+}%
+{ \end{list} }
+%Fancy package for page enumeration and headers
+\pagestyle{fancy}
+%\pagestyle{empty}
+%\cfoot{Page \thepage\ of \pageref{LastPage}}
+%\cfoot{Page \thepage\ of 2}
+\setcounter{page}{21}
+\cfoot{\thepage\ }
+\lhead{\Large \textbf {Daria Shipilina}}
+\chead{{\textbf{\large \itshape Curriculum Vitae  }}}%Curriculum %Vitae 
+\voffset=-1.cm
+%\textheight = 670pt
+%\footskip = 60pt
+%\headheight=18pt
+\textheight = 670pt
+%\voffset=1.25cm
+\headsep=26pt
+\footskip = 25pt
+\begin{document}
+% Specify the bibtex style that you want for each paper type
+\bibliographystyle{unsrt}
+\bibliographystylerefpaper{unsrt}
+\bibliographystyleunrefpaper{unsrt}
+\bibliographystylesubmitpaper{unsrt}
+\bibliographystylejournal{unsrt}
+\bibliographystyletechreport{unsrt}
+\bibliographystyleclassproject{ieeetr}
+
+% We'll use this length to change the defaults in some of our lists.
+\newlength{\oldcvlabelwidth}
+\renewcommand*{\cvbibname}{}
+
+% This is what will appear at the very top of your CV.
+
+
+
+\begin{cv}%{Maksym Serbyn\\{\large \itshape Curriculum Vitae}}
+% Items have more vertical space between them than line breaks.
+
+
+
+\begin{cvlist}{Contact}
+    \item Am Campus 1\\
+     Klosterneuburg, Austria 3400\\
+      phone: +43-677-623-45763\\
+      e-mail: daria.shipilina@ist.ac.at%daria.sh@berkeley.edu
+\end{cvlist}
+
+\begin{cvlist}{Main Areas of Research}
+\item Population genetics, speciation, hybridization, bioacoustics, animal ecology
+\end{cvlist}
+
+\begin{cvlist}{Academic Career}
+\item[Jan. 2018 --] \textbf{Postdoctorate Researcher}, Prof. Nicholas Barton Group \\
+\textit{Institute of Science and Technology Austria (IST)}, Austria%\\[-20pt]
+\item[2014 -- 2018] \textbf{Maternity leave} with Marfa Serbyn (02.07.2011) and Tikhon Serbyn (10.05.2013)
+\small{Note: Due to birth of my children and then official maternity leave, my teaching and conference activities were limited in 2011-2017.}
+\normalsize{\item[2011 -- 2014]   \textbf{Ph.D. in Biology}\\
+       Department of Vertebrate Zoology,  Moscow State University, Moscow, Russia
+        \begin{sublist}
+     		\item Thesis:~\textit{Hybridization between siberian and east-european chiffchaffs: morphological,  bioacoustical and genetical aspects} (advisor Dr. I. Marova) %\& Dr. N. Backst\"orm)
+	       \end{sublist}
+	        \item[2010 -- 2011] \textbf{Academic visitor},  Department of Organismic and Evolutionary Biology (Edwards Lab) \\ %Museum of Comparative Zoology Labs, \textbf{Research Trainee}
+ \textit{Harvard University}, USA
+\item[2005 -- 2010] \textbf{M.S. in Biology}\\
+             Department of Vertebrate Zoology,  Moscow State University, Moscow, Russia
+        \begin{sublist}
+       % \item GPA: 3.99 out of 4.00
+		\item Thesis:~\textit{Acoustic and genetical differentiation in a wide zone of hybridization between siberian and east-european chiffchaffs} (advisor Dr. I. Marova)
+	       \end{sublist} }
+\end{cvlist}
+
+\begin{cvlist}{Awards, Conferences, Reviewing Activities}
+  %   \item [2014 -- present] \textbf{Contributing member}\\
+    % EBCC Atlas of European Breeding Birds (Russia)
+	
+\item [2017] Reviewer for \textit{PeerJ}
+ \item[2010] Current problems of ecology and conservation conference, RUDN, {Moscow}.
+\item[2010]  XVIII International young scientist conference ``Lomonosov'',{Moscow}
+\item[2009]  7th Conference for European Ornithological Union, {Z\"urich}
+\item[2009] XXVI International  young scientist conference ``Lomonosov'', {Moscow} \\ \textbf{Best plenary presentation award}
+\end{cvlist}
+
+\begin{cvlist}{Grants}
+ \item[2018] \textbf{Erasmus+ Staff Mobility Grant}\\
+ Collaboraive project and training at \textit{John Innes Centre}, Norwich, UK 
+%\item[2013] \textbf{Royal Swedish Academy of Science} (KVA) Project Grant \\
+% \textit{(Together with Prof. Niclas Backstr\"om)} \\
+% Supplementary funding for genomic sequensing %SEK 100,000 The genetics of reproductive isolation in an avian hybrid zone \textit{(Together with Prof. Niclas Backstr\"om)} SEK 100,000 Project Grant (ID\#: FOA13H-088)
+%\item[2012] \textbf{Helge Axelson Johnson's Foundation}\\
+% \textit{(Together with Prof. Niclas Backstr\"om)} \\
+ %Supplementary funding for genomic sequensing
+ %The genetics of reproductive isolation in a chiffchaff (\textit{Phylloscopus collybita} sp.) hybrid zone. %SEK 45,000
+%\item[2011] \textbf{Lars Hiertas Memory Foundation} \\
+% \textit{(Together with Prof. Niclas Backstr\"om)} \\
+% Supplementary funding for genomic sequensing
+%The genetics of reproductive isolation in chiffchaff (Phylloscopus collybita sp.). %SEK 20,000
+%\item[2011] \textbf{Nilsson-Ehle-Foundation}, Royal Physiographic Society in Lund \\
+% \textit{(Together with Prof. Niclas Backstr\"om)} \\
+% Supplementary funding for genomic sequensing
+%The genetics of reproductive isolation in a chiffchaff (Phylloscopus collybita sp.) hybrid zone. SEK 83,000
+%\item[2009] \textbf{Russian Fund for Basic Research} Travel Grant\\
+%Attended 8th Conference of European Ornithological Union, August 2009
+\end{cvlist}
+
+\begin{cvlist}{International Cooperation Partners}
+\item[2010 -- present] \textbf{Prof. Niclas Backstr\"om}, Uppsala University
+\end{cvlist}
+
+%\begin{cvlist}{Current position}
+%\item[2017-present] \textbf{Research Trainee}, Institute of Science and Technology Austria (Barton Lab), Austria%\\[-20pt]
+%\begin{itemize}%\itemsep = -1pt
+%\item Supported by Kungliga Fysiografiska Sällskapet i Lund (Nilsson-Ehle Donations), Helge Ax:son Johnsons Foundation and the Lars Hierta Memorial Foundation.
+%\item Obtained the first genome-wide scan for Chiffchaff, \textit{Phylloscopus collybita})
+%\item Implemented data processing from raw genome reads to a set of SNPs %(and optimized) 
+%\item Used SNP set to quantify genetics differences between populations 
+%\item Analyzed and visualized population genetics patterns using R (hierfstat, smartPCA, ggplot), Structure 
+%\end{itemize}
+
+%\end{cvlist}
+
+
+%\begin{cvlist}{Research experience} %{Previous positions}
+%\item[2018 -- present] \textbf{Postdoctorate Researcher}, Prof. Nicholas Barton Group \\
+%\textit{Institute of Science and Technology Austria (IST)}, Austria%\\[-20pt]
+%\item[2014 -- 2018] \textbf{Research Affiliate}, Department of Evolutionary Biology (Backstr\"om Lab),\\ \emph{Uppsala \mbox{University}}, Sweden%\\[-20pt]
+%\begin{itemize}%\itemsep = -1pt
+%\item[2014 -- 2018] \textbf{Maternity leave} with Marfa Serbyn (02.07.2011) and Tikhon Serbyn (10.05.2013)
+%\small{Note: Due to birth of my children and then official maternity leave, my teaching and conference activities were limited
+%in 2011-2017.} 
+%\item Supported by Kungliga Fysiografiska Sällskapet i Lund (Nilsson-Ehle Donations), Helge Ax:son Johnsons Foundation and the Lars Hierta Memorial Foundation.
+%\item Obtained the first genome-wide scan for Chiffchaff, \textit{Phylloscopus collybita})
+%\item Implemented data processing from raw genome reads to a set of SNPs %(and optimized) 
+%\item Used SNP set to quantify genetics differences between populations 
+%\item Analyzed and visualized population genetics patterns using R (hierfstat, smartPCA, ggplot), Structure 
+%\end{itemize}
+ %\item[2010 -- 2011] \textbf{Academic visitor},  Department of Organismic and Evolutionary Biology (Edwards Lab) \\ %Museum of Comparative Zoology Labs, \textbf{Research Trainee}
+% \textit{Harvard University}, USA%\\[-20pt]
+    % \begin{itemize}%\itemsep = -1pt
+     %\item \textbf{\color{red}DESCRIBE what you did, to emphasize your relevant skills, not scientific results!}
+     %\item Obtained cis-regulatory sequences for genes involved in disease response using plasmid library
+     % \item Discovered an evidence for a recent evolution in a response to pathogen in House Finch \textit{C. mexicanus}
+%\end{itemize}
+% \item[2007 -- 2014] \textbf{Research Assistant}, Department of Vertebrate Zoology\\ \textit{Moscow State University}, Russia%\\[-20pt]
+ %Ecology and evolution of terrestrial Vertebrates group
+    %\begin{itemize}\itemsep = -1pt
+ % \item Collected DNA samples for 200 birds in independent field expeditions
+ %\item Independently performed boiacoustic, morphological and genetic analysis %(mitochondrial DNA)
+% \item  Proved hybridization and gene exchange in two cryptic bird species %using a data set of more then 200 individuals 
+%\item  Conducted a complex research project, including independent sampling expeditions, boiacoustic, morphological and genetic analysis
+% \item   Studied mechanisms of reproductive isolation between taxons 
+% \end{itemize}
+   
+
+
+%\end{cvlist}
+
+
+%5\begin{cvlist}{Research Experience}
+%\item[2014-present] Collaboration with Dr. Niclas Backstrom, Department of Evolutionary Biology, Evolutionary Biology Centre, Uppsala University, Sweden
+%We studied genome-wide genetic variation in chiffchaffs using next generation sequencing methods. I pre-processed DNA samples of over 40 individuals for NGS.  I implemented workflow which enabled us to process data from raw genome reads to a set of SNPs. Using discovered SNPs we analyzed the population structure, and quantified degree of hybridization between subspecies. 
+% \item[2010 -- 2011] Visitor researcher at  Prof. Edwards laboratory, Department of Organismic and Evolutionary Biology, %Museum of Comparative Zoology Labs,
+% \textit{Harvard University}, Cambridge, MA.
+%    \item[2007 -- 2014] Research Assistant, Ecology and evolution of terrestrial Vertebrates group and 
+%    Laboratory of  Molecular-Genetic Methods in Zoology, \textit{Moscow State University}, Moscow, Russia
+  %I studied ethological, ecological and genetic mechanisms of evolution and population differentiation of birds (family \textit{Sylviidae}), combining field, bioacoustic and genetic approaches. I participated in 5 field trip to collect materials. I performed acoustic analysis of a recorded songs, analyzed mitochondrial DNA and morphological data. My work resulted in a comprehensive description of hybridization zone between east-european and siberian chiffchaffs. 
+%I investigated candidate loci responsible for disease adaptation in house finches. I analyzed rapidly evolving parts of genome. Using subsequent candidate loci resequencing, we found an evidence for a recent evolution in a response to pathogen. 
+%\item[August 2009 ] Summer field school at Cranberry Lake Biological Station, \emph{State University of New York}
+        %I studied white-throated sparrows in the research group headed by Prof. Tuttle. My work included capturing, nest monitoring, and processing blood samples.
+%\end{cvlist}
+
+
+%\begin{cvlist}{Qualifications and Skills}
+ %   \item \textbf{Methods of scientific analysis}
+%	\begin{sublist}
+%\item \textbf{Genetics and bioinformatics}: DNA quality control and NGS library preparation, Bioinformatic tools: BWA, samtools, GATK, genomic databases: GenBank, ensemble; BLAST
+%\item \textbf{Data analysis/Computer skills}: MS Office (Word, Exel, PowerPoint, Access), Adobe Photoshop and Illustrator, R (including hierfstat, smartPCA, ggplot), 
+%\item \textbf{Animal models}: Handling of various vertebrate and invertebrate animals, taking blood samples, capturing in nature, maintaining a study collection.
+%\item \textbf{Molecular biology}: Manual and automatic DNA extraction from blood, tissue samples and from plasmid/BAC, real time PCR, primers design, DNA restriction digest, agarose and polyacrylamide electrophoresis, 
+%\item \textbf{Field experience}: sound/song recording, mist netting, operation of GPS devices, methods of rodent mammals capturing, museum sample preparation, geobotanical analysis
+%\item \textbf{Cell biology}: Gene library (plasmid) construction, multiplication (Q-bot clone-picking robot), transformation in situ hybridization, radioactive isotope analysis, working with bacteria cultures manually and using robotic systems, 
+%\item \textbf{Animal models}: Handling of various vertebrate and invertebrate animals, taking blood samples, capturing in nature, maintaining a study collection.
+
+
+%The resulting labeled DNA can serve as a sensitive hybridization probe for screening gene libraries The Typhoon instrument is a variable-mode imager that produces digital images of radioactive 
+%•	Plasmid/BAC DNA isolation protocol
+
+
+%•	
+
+
+
+%•	
+%Teaching
+%•	Curriculum design and development, syllabus construction, lecturing Training new students in basic molecular biology methods
+
+%Analytical skills
+%•	MS Office (Word, Excel, and Powerpoint), Adobe Photoshop, Sigma Plot, Chem Draw, and PubMed search. BWA, Picard, GATK?-
+%•	Data analysis: sequencing databases, BLAST?- Data analysis: R, StatSoft, Microsoft Exel, STRUCTURE, EigenSoft
+%Analysis of genetic structure of the population of non-model organism (Phylloscopus collybita)?- Working with raw NGS data:: DNA extraction, quality control including gel electrophoresis, SDS-PAGE, library preparation?- 
+%\item \textbf{Molecular biology}: Manual and automatic DNA extraction from blood, tissue samples and from plasmid/BAC, real time PCR, primers design, DNA restriction digest, agarose and polyacrylamide electrophoresis, 
+%	\end{sublist}
+	
+%\item \textbf{Computer skills}
+%\begin{sublist}
+%		\item MS Office (Word, Exel, PowerPoint, Access), Adobe Photoshop, Illustrator (basic).
+%\end{sublist}
+
+	
+%\setlength{\cvlabelwidth}{\oldcvlabelwidth}
+
+%\end{cvlist}
+
+%\begin{cvlist}{Leadership experience}
+%\item[2008] Participated in organizing several Greenpeace Russia programs;  taught ornithology classes at ``Kids for Forest Restoration'' summer camp 
+%\end{cvlist}
+
+%\begin{cvlist}{Environmental Education and Teaching}
+      % \item[2015-2016] Teaching naturalists classes for youth, including botany, zoology, ecology and environmental education at ``Krugozor'' after-school program, Berkeley, Curriculum design and development, syllabus construction, lecturing
+	%\item[2009-2011] Training undergraduate students in field and molecular biology methods at  Moscow State University and Harvard University
+	%\item[2008] Participated in organizing several Greenpeace Russia programs;  taught ornithology classes at ``Kids for Forest Restoration'' summer camp 
+%\end{cvlist}
+
+
+
+
+% These commands will make our papers be indented after the first line
+% to make the author's name stand out more.  Also, we reduce the
+% indentation of the paper type titles (e.g., Journal Papers,
+% Conference Paper) compared to regular cvlist items.
+
+%\setlength{\oldcvlabelwidth}{\cvlabelwidth}
+%\setlength{\cvlabelwidth}{6em}%1
+%\renewcommand*{\bibindent}{1.5em}
+
+
+% Do bibaddtoleftmargin instead of biblabelsep if you're
+% not using manybib or open bib
+%\renewcommand*{\bibaddtoleftmargin}{1.5em}
+%\renewcommand*{\biblabelsep}{1.5em}
+
+% To update, before doing latexmk, run:
+% bibtex journal
+% bibtex refpaper
+% bibtex unrefpaper
+% bibtex techreport
+
+
+
+
+
+\newpage
+\ \\[-60pt]
+\begin{cvlist}{Publications}
+\item
+\end{cvlist}
+
+%\begin{itemize}
+%\item[]
+
+%\textbf{\quad Papers under review}
+%\end{itemize}
+
+	%\begin{enumerate}%{sublist}{enumerate}
+	%\item  V. Talla, F. Kalsoom, \textbf{D. Shipilina}, I. Marova, N. Backstr\"om
+	%"Genome-wide patterns of genetic diversity and differentiation in European and Siberian chiffchaff (\textit{Phylloscopus collybita abietinus / P. tristis})"
+	%\end{enumerate}%{sublist}
+
+\textbf{\quad Most Important Scientific Publications}
+	
+	%\begin{enumerate}%{sublist}{enumerate}	
+		%\item  Marova, I., \textbf{Shipilina, D.}, Fedorov, V., Ivanitskii, V., \textbf{Shipilina, D.}\\
+          %  Siberian and East European chiffchaffs: geographical distribution, morphological features, vocalization, phenomenon of mixed singing, and evidences of hybridization in sympatry zone, in: "El mosquitero ib{\'e}rico", Grupo Iberico de Anillamiento, L{\'e}on, \textbf{2013}, 119--139.
+            \begin{enumerate}%{sublist}{enumerate}	
+			\item Talla V, Kalsoom F, \textbf{Shipilina D}, Marova I, Backström N. \textbf{2017}. 
+	Heterogeneous patterns of genetic diversity and differentiation in European and Siberian chiffchaff (\textit{Phylloscopus collybita abietinus / P. tristis}). G3: Genes, Genomes, Genetics 7: 3983-3998. \href{http://dx.doi.org/doi:10.1534/g3.117.300152}{doi:10.1534/g3.117.300152}
+	%\item  \textbf{D. Shipilina}, M. Serbyn, V. Ivanitskii, I. Marova, N. Backstr\"om\\
+	       %  "Patterns of genetic, phenotypic and acoustic variation across a chiffchaff (\textit{Phylloscopus collybita abietinus/tristis}) hybrid zone",  \textit{Ecology and evolution}, \textbf{2017}, Vol.~7., 2169--2180.
+	 \item  \textbf{Shipilina D}, Serbyn M, Ivanitskii V, Marova I, Backström N. \textbf{2017}\\
+	        Patterns of genetic, phenotypic and acoustic variation across a chiffchaff (\textit{Phylloscopus collybita abietinus/tristis}) hybrid zone. Ecology and evolution 7: 2169--2180. \href{http://dx.doi.org/doi: 10.1002/ece3.2782}{doi: 10.1002/ece3.2782}
+%{sublist}
+\item  Backstr{\"o}m N, \textbf{Shipilina D}, Blom M, Edwards S. \textbf{2013}\\
+	           Cis-regulatory sequence variation and association with Mycoplasma load in natural populations of the house finch (\textit{Carpodacus mexicanus}). Ecology and evolution 3(3): 655--666. \href{http://dx.doi.org/doi.org/10.1002/ece3.484}{doi: 10.1002/ece3.484 }
+\item  Marova I, Fedorov V, \textbf{Shipilina D}, Alekseev V. \textbf{2009}\\
+Genetic and vocal differentiation in hybrid zones of passerine birds: siberian and european chiffchaffs (\textit{Phylloscopus} [\textit{collybita}] \textit{tristis} and \textit{Ph. [c.] abietinus}) in the Southern Urals. Doklady Biological Sciences 427: 384--386. \href{http://dx.doi.org/doi.org/10.1134/S0012496609040231}{doi: 10.1134/S0012496609040231}          
+	\end{enumerate}
+	% With multibib, each cite command has the type after it.
+\textbf{\quad Publications of the past 5 years}
+	%\small{*Maternity leave extracted}
+	\begin{enumerate}%{sublist}
+	%\item  V. Talla, F. Kalsoom, \textbf{D. Shipilina}, I. Marova, N. Backstr\"om
+	%Heterogeneous Patterns of Genetic Diversity and Differentiation in European and Siberian Chiffchaff (\textit{Phylloscopus collybita abietinus / P. tristis}), \textit{G3}, \textbf{2017}, in print.
+	\item Talla V, Kalsoom F, \textbf{Shipilina D}, Marova I, Backström N. \textbf{2017}. 
+	Heterogeneous patterns of genetic diversity and differentiation in European and Siberian chiffchaff (\textit{Phylloscopus collybita abietinus / P. tristis}). G3: Genes, Genomes, Genetics 7: 3983-3998. \href{http://dx.doi.org/doi:10.1534/g3.117.300152}{doi:10.1534/g3.117.300152}
+	%\item  \textbf{D. Shipilina}, M. Serbyn, V. Ivanitskii, I. Marova, N. Backstr\"om\\
+	       %  "Patterns of genetic, phenotypic and acoustic variation across a chiffchaff (\textit{Phylloscopus collybita abietinus/tristis}) hybrid zone",  \textit{Ecology and evolution}, \textbf{2017}, Vol.~7., 2169--2180.
+	 \item  \textbf{Shipilina D}, Serbyn M, Ivanitskii V, Marova I, Backström N. \textbf{2017}\\
+	        Patterns of genetic, phenotypic and acoustic variation across a chiffchaff (\textit{Phylloscopus collybita abietinus/tristis}) hybrid zone. Ecology and evolution 7: 2169--2180. \href{http://dx.doi.org/doi: 10.1002/ece3.2782}{doi: 10.1002/ece3.2782}       
+	%\item  I.Marova, \textbf{D.Shipilina}, V.Fedorov, V.Alekseev, V.Ivanitskii\\
+	        % "Interaction between Common and Siberian Chiffchaff in a contact zone",  \textit{Ornis Fennica},\\ \textbf{2017}, Vol.~94.,~66--81.
+	 \item  Marova I, \textbf{Shipilina D}, Fedorov V, Alekseev V, Ivanitskii V. \textbf{2017}\\
+	         Interaction between Common and Siberian Chiffchaff in a contact zone,  \textit{Ornis Fennica} 94:~66--81. \href{https://www.ornisfennica.org/pdf/latest/172Marova.pdf}{ISSN: 0030-5685} 
+	         
+	%\item I.Marova, \textbf{D.Shipilina}, V.Alekseev, V.Fedorov, V.Ivanitskii\\
+		%"Hybridisation of Eastern European and Siberian chiffchaffs ( \textit{Phylloscopus collybita abietinus - P.c. tristis}): complex analysis of the sympatry zone on Southern Ural",  		\textit{Ornitologia}, \textbf{2016}, Vol.~40., 27--45. %[In Russian]
+		\item Marova I, \textbf{Shipilina D}, Alekseev V, Fedorov V, Ivanitskii V. \textbf{2016}\\
+		Hybridisation of Eastern European and Siberian chiffchaffs (\textit{Phylloscopus collybita abietinus - P.c. tristis}): complex analysis of the sympatry zone on Southern Ural. Ornitologia 40: 27--45. (In Russian) \href{http://zmmu.msu.ru/ornithology/Vol\%2040/27-47\%20Marova\%20et\%20al.pdf}{ISSN-0474-7313} 
+
+ 	%\item  N. Selivanova, \textbf{D. Shipilina}, A.Yestafief, I. Marova\\
+            %	``Intrerspecific variability of the Chiffchaff (\textit{Phylloscopus collybita}, Sylviidae, Aves) in a sympatry zone of Siberian and Eastern European form in Komi republic  (morpholgical, bioacoustical and genetical analysis)'', \textit{Bulletin of Moscow society for Natural History. Division of biology}, \textbf{2014}, Vol. 119, n.~1, 3--16. %[In Russian]
+          \item  Selivanova N, \textbf{Shipilina D}, Yestafief A, Marova I. \textbf{2014}\\
+            	Intrerspecific variability of the Chiffchaff (\textit{Phylloscopus collybita}, Sylviidae, Aves) in a sympatry zone of Siberian and Eastern European form in Komi republic  (morphological, bioacoustic and genetic analysis). Bulletin of Moscow Soc. for Nat. Hist. 119(1):3--16. (In Russian)
+  
+	%\item I.Marova, \textbf{D.Shipilina}, V.Alekseev, V.Fedorov, V.Ivanitskii\\
+		%"Zone of the secondary contact between Eastern European and Siberian chiffchaffs \textit{(Phylloscopus collybita abietinus - Ph. c.tristis)} on Southern Ural: proofs of the hybridisation", \textit{Proceedings of Southern Ural State Natural Reserve}, \textbf{2014}, Vol. 2, 95--117 %[In Russian]
+	\item Marova, I., \textbf{Shipilina, D.}, Alekseev, V., Fedorov, V., Ivanitskii, V. \textbf{2014}\\
+		Zone of the secondary contact between Eastern European and Siberian chiffchaffs \textit{(Phylloscopus collybita abietinus - Ph. c.tristis)} on Southern Ural: proofs of the hybridisation. Proc. of Southern Ural State Reserve 2: 95--117. (In Russian)
+
+	%\item  N. Backstr{\"o}m, \textbf{D. Shipilina}, M. Blom, S. Edwards\\
+	         %  ``Cis-regulatory sequence variation and association with Mycoplasma load in natural populations of the house finch (\textit{Carpodacus mexicanus})'', \textit{Ecology and evolution}, \textbf{2013}, Vol.~3., n.~3, 655--666.
+	         \item  Marova I, \textbf{Shipilina D}, Fedorov V, Ivanitskii V. \textbf{2013}\\
+            Siberian and East European chiffchaffs: geographical distribution, morphological features, vocalization, phenomenon of mixed singing, and evidences of hybridization in sympatry zone, in monography: "El mosquitero ib{\'e}rico": 119--139.
+	\item  Backstr{\"o}m N, \textbf{Shipilina D}, Blom M, Edwards S. \textbf{2013}\\
+	           Cis-regulatory sequence variation and association with Mycoplasma load in natural populations of the house finch (\textit{Carpodacus mexicanus}). Ecology and evolution 3(3): 655--666. \href{http://dx.doi.org/doi: 10.1002/ece3.484}{doi:10.1002/ece3.484}  
+    
+          %\item  \textbf{D. Shipilina}, I. Marova\\
+          	%``Habitats, population structure and diversity of the song of the Caucasus Chiffchaff (\textit{Phylloscopus} [\textit{sindianus}] \textit{lorenzii}) on the Northern Caucasus'', \textit{Ornitologia}, \textbf{2013}, Vol.~38, 54--63 %[In Russian]
+
+ \item \textbf{Shipilina D}, Marova I. \textbf{2013}\\
+          	Habitats, population structure and diversity of the song of the Caucasus Chiffchaff (\textit{Phylloscopus} [\textit{sindianus}] \textit{lorenzii}) on the Northern Caucasus. Ornitologia 38: 54--63 (In Russian) \href{http://zmmu.msu.ru/ornithology/Vol\%2038/38_Shipilina_Marova.pdf}{ISSN-0474-7313} 
+	
+	%\item Y. Deart, \textbf{D.Shipilina}
+	%"Anatomy of the seedling of \textit{Tilia cordata}", in: "Morphology and anatomy of flora of the Usman forest (Voronezh region)", MAKS Press, \textbf{2010}, 33-37.
+	
+	%\item  I. Marova, V. Fedorov, \textbf{D. Shipilina}, V. Alekseev\\
+%``Genetic and Vocal Differentiation in Hybrid Zones of Passerine Birds: Siberian and European Chiffchaffs (\textit{Phylloscopus} [\textit{collybita}] \textit{tristis} and \textit{Ph. [c.] abietinus}) in the Southern Urals'', \textit{Doklady Biological Sciences}, \textbf{2009}, \textit{427}, 384--386.
+
+%\item  Marova, I., Fedorov, V., \textbf{Shipilina, D.}, Alekseev, V. \textbf{2009}\\
+%Genetic and Vocal Differentiation in Hybrid Zones of Passerine Birds: Siberian and European Chiffchaffs (\textit{Phylloscopus} [\textit{collybita}] \textit{tristis} and \textit{Ph. [c.] abietinus}) in the Southern Urals. Doklady Biological Sciences 427: 384--386.
+
+	%\item  I. Marova, V. Fedorov, \textbf{D. Shipilina}, V. Alekseev\\
+          %  ``Ornithofauna of western slopes of forest covered mountains of Southern Ural'', \emph{Materials on birds distribution on the Ural mountains, around the Ural region and Western Siberia}, \textbf{2008}, 62--69
+
+%\item  Marova, I., Fedorov, V., \textbf{Shipilina, D.}, Alekseev, V. \textbf{2008}\\
+            %Ornithofauna of western slopes of forest covered mountains of Southern Ural. Materials on birds distribution on the Ural mountains, around the Ural region and Western Siberia: 62--69
+
+\end{enumerate}%{sublist}
+
+
+
+
+
+
+
+
+
+
+
+%\begin{cvlist}{Teaching Experience}
+
+%\end{cvlist}
+
+\setlength{\oldcvlabelwidth}{\cvlabelwidth}
+\setlength{\cvlabelwidth}{6em}
+
+
+
+
+
+% Reset the label indentation
+%\newpage
+\setlength{\cvlabelwidth}{\oldcvlabelwidth}
+
+
+%\begin{cvlist}{Personal Information}
+%    \item Date of birth:  August 21, 1988\\
+          %Citizenship:  Russia \\
+ %         Languages: English, Russian.
+%\end{cvlist}
+%\begin{cvlist}{Personal Information}
+ %   \item Date of birth:  January 30th, 1986\\
+ %         Citizenship:  Ukraine \\
+ %         Languages: English (fluent), Russian (native), Ukrainian (native), German (basic)
+%\end{cvlist}
+
+%\begin{cvlist}{Personal Interests}
+%\item  Reading, Travelling, Music
+%\end{cvlist}
+%\footskip = -10pt
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{cv}
+\end{document}
+

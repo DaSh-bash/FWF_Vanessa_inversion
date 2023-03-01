@@ -1,0 +1,146 @@
+\documentclass[11pt,a4paper]{article}
+% enable charter to change font
+%\usepackage{charter} 
+\usepackage{amssymb}
+% added packages
+\renewcommand{\baselinestretch}{1.5} %1.5 interval
+% figure page rotated
+\usepackage{wrapfig}
+\usepackage{pdflscape}
+\usepackage{rotating}
+
+%change colors of links
+\usepackage{hyperref}
+\hypersetup{
+    bookmarks=false,         % show bookmarks bar?
+    unicode=false,          % non-Latin characters in Acrobats bookmarks
+    pdftoolbar=false,        % show Acrobats toolbar?
+    pdfmenubar=true,        % show Acrobats menu?
+    pdffitwindow=false,     % window fit to page when opened
+    pdfstartview={FitH},    % fits the width of the page to the window
+    pdftitle={},    % title
+    pdfauthor={Daria Shipilina},     % author
+    pdfsubject={},   % subject of the document
+    pdfcreator={},   % creator of the document
+    pdfproducer={}, % producer of the document
+    pdfkeywords={ }{}, % list of keywords
+    pdfnewwindow=true,      % links in new window
+    colorlinks=true,       % false: boxed links; true: colored links
+    linkcolor=black,          % color of internal links (change box color with linkbordercolor)
+    citecolor=blue,        % color of links to bibliography
+    filecolor=magenta,      % color of file links
+    urlcolor=blue           % color of external links
+}
+% biblio-ref 
+%\usepackage[round]{natbib}
+%\bibliographystyle{plainnat}
+
+\usepackage[total={170mm,250mm},left=2.0cm,right=2.0cm,top=2.5cm]{geometry}
+
+\usepackage{multicol}
+\usepackage{textcomp}
+
+\usepackage{amsmath}
+\usepackage{bm}
+\usepackage{dsfont}
+%\usepackage{pifont}
+\usepackage[mathscr]{eucal}
+\usepackage{mathrsfs}
+\usepackage{amssymb,latexsym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{epsfig}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}{Proposition}
+\newtheorem{corollary}{Corollary}
+\newtheorem{lemma}{Lemma}
+\newtheorem{definition}{Definition}
+\newtheorem{remark}{Remark}
+\newtheorem{example}{Example}
+\newtheorem{intuition}{Intuition}
+\newtheorem{assumption}{Assumption}
+
+\usepackage{fancyheadings}
+\setlength{\headheight}{15.8pt}
+\pagestyle{fancyplain}
+
+
+
+\newcommand{\euro}{\textsf{\texteuro}\ }
+\newcommand{\pdag}{{\phantom{\dag}}}
+\newcommand{\ket}[1]{\left|#1\right\rangle}
+\newcommand{\bra}[1]{\left\langle#1\right|}
+\newcommand{\up}{\uparrow}
+\newcommand{\dw}{\downarrow}
+\newcommand{\bs}[1]{\boldsymbol{#1}}
+
+\newcommand{\transpose}{^{\top}}
+
+\renewcommand\thesection{}
+
+\begin{document}
+
+\setcounter{page}{1}
+
+%\thispagestyle{empty}
+
+
+\lhead{Daria Shipilina}
+%\chead{\href{}{Part B1} / \href{}{Section 1a}}
+%\fancyhead[R]{\rightmark}
+%\rhead{\texttt{QuNEM}}
+%\setlength{\headrulewidth}{0.4pt}
+
+%\begin{center}
+%\large{\textbf{
+%Ecological and genomic consequences of a novel hybrid zone forming in chiffchaff (\emph{Phylloscopus collybita sp.})}}\\
+%\ \\
+
+%{ \textbf{Applicant}: Dr. Daria Shipilina     \\ \textbf{Co-applicant}: Prof. Nicholas H. Barton}
+%\end{center}
+
+
+
+%\tableofcontents
+
+%\clearpage
+
+
+\section{Career development plan}
+{\bf \large Applicant Background and Career to Date}
+
+Since my school years, I was fascinated by nature and excited to study mechanisms that would describe the incredible biodiversity on Earth and help in understanding animal behavior. My undergraduate and graduate studies at Moscow State University inspired me to specialize in evolutionary biology. I conducted my doctoral studies at the Moscow State University (MSU) in the group of Dr.Irina Marova. During my PhD, I was also an academic visitor at Harvard University (Edwards Lab) for one year and had an extensive collaboration with Uppsala University (Prof. Niclas Backström). In the Marova group, I was studying speciation, hybrid zones and vocal behavior of  birds, and gained expertise in ecology, bioacoustic analysis, molecular biology techniques and bioinformatics.
+
+I foresee a rapid development of evolutionary biology in the coming decades due to increasing interdisciplinary connections with mathematics, computer and data science. Thus, my current research aims to develop a skillset which will allow me to perform research on the very forefront of my field. As a zoologist by training, I feel confident about applying my knowledge in population genetics, animal behavior, ecology and ornithology to the proposed project. However, I am constantly seeking opportunities to expand my skills in mathematical modeling and computer science to allow me to diversify my skill set and, therefore, address a broader spectrum of evolutionary questions in my future career. \\
+
+%\vspace{10pt}
+{\bf \large The Lise Meitner Programme – Applicant and Institute Benefits}\\
+With the support of the Lise Meitner Fellowship I would get the opportunity to collaborate with Professor Nicholas Barton – one of the leading experts in evolution and population genetics. I see Prof. Barton’s group at IST Austria as an ideal place to boost my future career by improving my mathematical modeling skills and gaining experience in analysis of big data. Prof. Nicholas Barton continuously develops new quantitative methods, many specially suited for hybrid zone studies, and of immediate interest of this proposal. In this context, I will also contribute to further development of quantitative tools that are much needed in modern evolutionary biology. 
+
+Additionally, the IST environment will allow me to develop other skills, necessary for my future academic career: teaching and leadership
+\begin{itemize}
+\item[1.]IST Austria has a variety of teaching and mentoring opportunities, including an excellent opportunity to teach evolutionary biology and population genetics courses. In future, I can see myself teaching bioinformatics as well as various topics in zoology/ornithology. I would also like to develop a course on modern and classic methods in zoology and evolution.  
+\item[2.] One shouldn’t underestimate the importance of developing leadership skills for scientific research. I’m passionate about working with people and already during my undergraduate studies managed field research in Pinega and Ilmeny State Reserves. On my maternity leave, I developed my leadership skills through working in community building, event planning and management at UC Berkeley. At IST I can further develop my leadership skills by managing and coordinating field work for the proposed project, and also by taking courses available at IST. 
+\end{itemize}
+
+{\bf \large Post Lise Meitner Programme}\\
+To conclude, I find my stay at IST essential for my future career development. Since I recently took a maternity leave with my two children, I see IST Austria as an ideal place for a career restart as a postdoctoral researcher. This position is essential for my future development as a researcher and will prepare me for the my career steps as a senior postdoctoral researcher and later faculty. In particular, in preparation for this stage I will develop in three directions: (1) strengthening and enriching scientific research skills, including exchange of experience, (2) develop my leadership skills, (3) gaining experience in teaching and developing new courses. 
+
+In addition to impact on European and international scientific community, I want to serve as a role model of a successful researcher and dedicated mother and inspire young students (especially female) follow a research career. After completion of this programme, I will bring my skillset to a new level,  improve my employability and expand my publication record. This achievements will be essential to reach my goal – performing a high-impact first class research, as a faculty in evolutionary biology. 
+
+\vspace{40pt}
+{ \textbf{Applicant}: Dr. Daria Shipilina $_\text{----------------------------------------------------}$ \\
+
+\textbf{Co-applicant}: Prof. Nicholas H. Barton $_\text{------------------------------------}$ }
+
+
+%\newpage
+%\section{Career development plan}
+
+\end{document}
+
+
+

@@ -1,0 +1,253 @@
+\documentclass[10pt]{article}
+\usepackage{charter}
+\usepackage{hyperref}
+\hypersetup{
+    bookmarks=false,         % show bookmarks bar?
+    unicode=false,          % non-Latin characters in Acrobats bookmarks
+    pdftoolbar=false,        % show Acrobats toolbar?
+    pdfmenubar=true,        % show Acrobats menu?
+    pdffitwindow=false,     % window fit to page when opened
+    pdfstartview={FitH},    % fits the width of the page to the window
+    pdftitle={},    % title
+    pdfauthor={Daria Shipilina},     % author
+    pdfsubject={},   % subject of the document
+    pdfcreator={},   % creator of the document
+    pdfproducer={}, % producer of the document
+    pdfkeywords={ }{}, % list of keywords
+    pdfnewwindow=true,      % links in new window
+    colorlinks=true,       % false: boxed links; true: colored links
+    linkcolor=black,          % color of internal links (change box color with linkbordercolor)
+    citecolor=blue,        % color of links to bibliography
+    filecolor=magenta,      % color of file links
+    urlcolor=blue           % color of external links
+}
+
+\usepackage{fullpage}
+\usepackage[resetlabels]{multibib}
+\usepackage[ManyBibs]{currvita}
+%\usepackage[dvips]{color}
+%\usepackage[T2A]{fontenc}
+%\usepackage[english,russian]{babel}
+\usepackage{amsfonts,amssymb,graphicx}
+%\usepackage{multicol}
+\usepackage[rflt]{floatflt}
+% Initialize each paper type for which you need a bibliography.
+% Just a dummy parameter is necessary.
+\usepackage{lastpage,fancyhdr}
+\date{}
+\newcites{refpaper}{foo}
+\newcites{unrefpaper}{foo}
+\newcites{journal}{foo}
+\newcites{techreport}{foo}
+\newcites{submitpaper}{foo}
+\newcites{classproject}{foo}
+
+% Better for lists with 1-2 items and short descriptions
+\newenvironment{sublist}{%
+	\begin{list}{}{%
+		\setlength{\itemsep}{0em}\setlength{\parsep}{0em}%
+		\setlength{\topsep}{0em}\setlength{\parskip}{0em}%
+	}%
+}%
+{ \end{list} }
+
+% Better for lists with more than 2 items and/or long descriptions
+\newenvironment{subbulletlist}{%
+	\begin{list}{\labelitemii}{%
+		\setlength{\topsep}{\itemsep}\setlength{\parskip}{\parsep}%
+	}%
+}%
+{ \end{list} }
+%Fancy package for page enumeration and headers
+\pagestyle{fancy}
+%\pagestyle{empty}
+%\cfoot{Page \thepage\ of \pageref{LastPage}}
+%\cfoot{Page \thepage\ of 2}
+\cfoot{}
+\lhead{\Large \textbf {Publication list}}
+\chead{{\textbf{\large \itshape 2015-2019}}}%Curriculum %Vitae 
+\voffset=-1.cm
+%\textheight = 670pt
+%\footskip = 60pt
+%\headheight=18pt
+\textheight = 670pt
+%\voffset=1.25cm
+\headsep=26pt
+\footskip = 25pt
+\begin{document}
+% Specify the bibtex style that you want for each paper type
+\bibliographystyle{unsrt}
+\bibliographystylerefpaper{unsrt}
+\bibliographystyleunrefpaper{unsrt}
+\bibliographystylesubmitpaper{unsrt}
+\bibliographystylejournal{unsrt}
+\bibliographystyletechreport{unsrt}
+\bibliographystyleclassproject{ieeetr}
+
+% We'll use this length to change the defaults in some of our lists.
+\newlength{\oldcvlabelwidth}
+\renewcommand*{\cvbibname}{}
+
+% This is what will appear at the very top of your CV.
+
+
+
+\begin{cv}%{Maksym Serbyn\\{\large \itshape Curriculum Vitae}}
+% Items have more vertical space between them than line breaks.
+
+
+
+
+
+\newpage
+%\ \\[-30pt]
+%\begin{cvlist}
+{\large \bf Daria Shipilina}\\
+%\item
+%\end{cvlist}
+
+\textbf{\quad Peer-reviewed Journal Papers}
+
+	\begin{enumerate}%{sublist}
+	  \setlength\itemsep{0.2em}
+	\item Talla, V., Kalsoom, F., Shipilina, D., Marova, I., Backström, N. (2017). \\
+	Heterogeneous patterns of genetic diversity and differentiation in European and Siberian chiffchaff (\textit{Phylloscopus collybita abietinus / P. tristis}). G3: Genes, Genomes, Genetics 7: 3983-3998. \\
+\href{http://dx.doi.org/doi:10.1534/g3.117.300152}{doi:10.1534/g3.117.300152}
+	 \item  Shipilina, D., Serbyn, M., Ivanitskii, V., Marova, I., Backström, N. (2017)\\
+	        Patterns of genetic, phenotypic and acoustic variation across a chiffchaff (\textit{Phylloscopus collybita abietinus/tristis}) hybrid zone. Ecology and evolution 7: 2169--2180.
+	         \href{http://dx.doi.org/doi: 10.1002/ece3.2782}{doi: 10.1002/ece3.2782}       
+	 \item  Marova, I., Shipilina, D., Fedorov, V., Alekseev, V., Ivanitskii, V. (2017)\\
+	         Interaction between Common and Siberian Chiffchaff in a contact zone,  \textit{Ornis Fennica} 94:~66--81.\\
+	         \href{https://www.ornisfennica.org/pdf/latest/172Marova.pdf}{ISSN: 0030-5685} 
+		\item Marova, I., Shipilina, D., Alekseev, V., Fedorov, V., Ivanitskii, V. (2016)\\
+		Hybridisation of Eastern European and Siberian chiffchaffs (\textit{Phylloscopus collybita abietinus - P.c. tristis}): complex analysis of the sympatry zone on Southern Ural. Ornitologia 40: 27--45. (In Russian) 
+\href{http://zmmu.msu.ru/ornithology/Vol\%2040/27-47\%20Marova\%20et\%20al.pdf}{ISSN-0474-7313} 
+	
+
+\end{enumerate}
+
+\vspace{10pt}
+\setlength{\oldcvlabelwidth}{\cvlabelwidth}
+%\setlength{\cvlabelwidth}{6em}
+
+{\large \bf Nicholas Barton}\\
+
+\textbf{\quad Peer-reviewed Journal Papers}
+\begin{enumerate}	  \setlength\itemsep{0.2em}
+\item Pickup, M., Barton, N. H., Brandvain, Y., Fraisse, C., Yakimowski, S., Dixit, T., Field, D. (2019). Mating system variation in hybrid zones: Facilitation, barriers and asymmetries to gene flow. New Phytologist, 224(3), 1035–1047. 
+\href{https://doi.org/10.1111/nph.16180}{doi:10.1111/nph.16180}
+\item Castro, J. P., Yancoskie, M. N., Marchini, M., Belohlavy, S., Hiramatsu, L., Kudka, M., Chan, Y. F. (2019). An integrative genomic analysis of the Longshanks selection experiment for longer limbs in mice. eLife, 8.
+\href{https://doi.org/10.7554/eLife.42014}{doi:10.7554/eLife.42014}
+\item Barton, N. H. (2019). Is speciation driven by cycles of mixing and isolation? National Science Review, 6(2), 291–292.
+\href{https://doi.org/10.1093/nsr/nwy113}{doi:10.1093/nsr/nwy113}
+\item Barton, N. H., Hermisson, J., Nordborg, M. (2019). Why structure matters. ELife, 8, e45380.
+\\ \href{https://doi.org/10.7554/eLife.45380}{doi:10.7554/eLife.45380}
+\item Sella, G., Barton, N. H. (2019). Thinking about the evolution of complex traits in the era of genome-wide association studies. Annual Review of Genomics and Human Genetics, 20, 461–493. \\
+\href{https://research-explorer.app.ist.ac.at/record/6855}{doi:10.1146/annurev-genom-083115-022316} 
+\item Barton, N. H., Etheridge, A. M. (2018). Establishment in a new habitat by polygenic adaptation. Theoretical Population Biology. 122(7), 110–127.
+\href{https://research-explorer.app.ist.ac.at/record/564}{DOI: 10.1016/j.tpb.2017.11.007}
+\item Charlesworth, B., Barton, N. H. (2018). The spread of an inversion with migration and selection. Genetics 208(1):377-382. 
+\href{http://dx.doi.org/10.1534/genetics.117.300426}{doi:10.1534/genetics.117.300426}
+\item Novembre, J., Barton, N. H. (2018). Tread lightly interpreting polygenic tests of selection. Genetics, 208(4), 1351-1355. \href{http://dx.doi.org/10.1534/genetics.118.300786}{doi:10.1534/genetics.118.300786}
+\item Payne, P., Geyrhofer, L., Barton, N. H., Bollback, J. P. (2018). CRISPR-based herd immunity can limit phage epidemics in bacterial populations. eLife, 7.
+\href{https://research-explorer.app.ist.ac.at/record/423}{DOI: 10.7554/eLife.32035}
+\item Ringbauer, H., Kolesnikov, A., Field, D., Barton, N. H. (2018). Estimating barriers to gene flow from distorted isolation-by-distance patterns. Genetics 208(3):1231-1245 
+\href{http://dx.doi.org/10.1534/genetics.117.300638.}{doi:10.1534/genetics.117.300638.}
+\item Sachdeva, H., Barton, N. H. (2018). Introgression of a block of genome under infinitesimal selection. Genetics, 209(4), 1279–1303. 
+\href{https://research-explorer.app.ist.ac.at/record/282}{DOI: 10.1534/genetics.118.301018}
+\item Ellis, T., Field, D., Barton, N. H. (2018). Inference from paternity and sibships accounting for uncertainty in genealogy. Molecular Ecology Resources, 18(5), 988–999.
+\href{https://research-explorer.app.ist.ac.at/record/396}{DOI: 10.1111/1755-0998.12782}
+\item Bodova, K., Priklopil, T., Field, D., Barton, N. H., Pickup, M. (2018). Evolutionary pathways for the generation of new self-incompatibility haplotypes in a non-self recognition system. Genetics, 209(3), 861–883.
+\href{https://research-explorer.app.ist.ac.at/record/316}{DOI: 10.1534/genetics.118.300748}
+\item Tavares, H., Whitley, A., Field, D., Bradley, D., Couchman, M., Copsey, L.,Coen, E. (2018). Selection and gene flow shape genomic islands that control floral guides. PNAS, 115(43), 11006–11011.
+\href{https://research-explorer.app.ist.ac.at/record/38}{DOI: 10.1073/pnas.1801832115}
+\item Barton, N. H. (2018). The consequences of an introgression event. Molecular Ecology, 27(24), 4973–4975.
+\href{https://research-explorer.app.ist.ac.at/record/40}{DOI: 10.1111/mec.14950}
+\item Barton, N. H.. (2017). How does epistasis influence the response to selection? Heredity 118(1):96-109
+\href{http://dx.doi.org/10.1038/hdy.2016.109}{doi:10.1038/hdy.2016.109}
+\item Barton, N. H., Etheridge, A. M., Veber, A. (2017). The infinitesimal model: Definition derivation and implications. Theoretical Population Biology 118:50-73 
+\href{http://dx.doi.org/10.1016/j.tpb.2017.06.001}{doi:10.1016/j.tpb.2017.06.001}
+\item Charlesworth, D., Barton, N. H., Charlesworth, B. (2017). The sources of adaptive evolution. Proc. Roy. Soc. (Lond.) B 284: 2016.2864. \href{http://dx.doi.org/doi: 10.1098/rspb.2016.2864}{doi:doi: 10.1098/rspb.2016.2864}
+\item Friedlander, T., Prizak, R., Barton, N. H., Tkacik, G. (2017). Evolution of new regulatory functions on biophysically realistic fitness landscapes. Nature Communications, 8(1), 216.
+\href{https://research-explorer.app.ist.ac.at/record/955}{DOI: 10.1038/s41467-017-00238-8}
+\item Lagator, M., Paixao, T., Barton, N. H., Bollback, J. P., Guet, C. (2017). On the mechanistic nature of epistasis in a canonical cis-regulatory element. eLife, 6. 
+\href{https://research-explorer.app.ist.ac.at/record/954}{DOI: 10.7554/eLife.25192}
+\item Novak, S., Barton, N. H. (2017). When does frequency-independent selection maintain genetic variation? Genetics 207(2):653-668.
+\href{http://dx.doi.org/10.1534/genetics.117.300129}{doi:10.1534/genetics.117.300129}
+\item Ringbauer, H., Coop, G., Barton, N. H. (2017). Inferring recent demography from isolation by distance of long shared sequence blocks. Genetics 205(3):1335-1351 
+\href{http://dx.doi.org/10.1534/genetics.116.196220}{doi:10.1534/genetics.116.196220}
+\item Sachdeva, H., Barton, N. H. (2017). Divergence and evolution of assortative mating in a polygenic trait model of speciation with gene flow. Evolution 71(6):1478-1493 
+\href{http://dx.doi.org/10.1111/evo.13252}{doi:10.1111/evo.13252}
+\item Schmidt, T. L., Barton, N. H., Rasic, G., Turley, A. P., Montgomery, B. L., Iturbe-Ormaetxe, I., Cook, P. E., Ryan, P. A., Ritchie, S. A., Hoffmann, A. A., O’Neill, S., Turelli, M. (2017). Successful local introduction and heterogeneous spatial spread of dengue-suppressing Wolbachia through an urban population of Aedes aegypti. PLoS Biology, 15(5).
+\href{https://research-explorer.app.ist.ac.at/record/951}{DOI: 10.1371/journal.pbio.2001894}
+\item Turelli, M., Barton, N. H. (2017). Deploying dengue-suppressing Wolbachia: Robust models predict slow but effective spatial spread in Aedes aegypti. Theoretical Population Biology 115, 45–60.
+\href{https://research-explorer.app.ist.ac.at/record/952}{DOI: 10.1016/j.tpb.2017.03.003}
+
+
+\item Abbott, R., Barton, N. H., Good, J. M. (2016). Genomics of hybridization and its evolutionary consequences. Molecular Ecology 25(11):2325-32 \href{http://dx.doi.org/10.1111/mec.13685}{doi:10.1111/mec.13685}
+\item Barton, N. H. (2016). Sewall Wright on evolution in Mendelian populations and the ``Shifting Balance”. Genetics 25(11):2325-32 
+\href{http://dx.doi.org/10.1534/genetics.115.184796}{doi:10.1534/genetics.115.184796}
+\item Barton, N. H.. (2016). Richard Hudson and Norman Kaplan on the coalescent process. Genetics 202(3):865-6 
+\href{http://dx.doi.org/10.1534/genetics.116.187542}{doi:10.1534/genetics.116.187542}
+\item Bodova, K., Tkacik, G., Barton, N. H. (2016). A general approximation for the dynamics of quantitative traits. Genetics 202(4):1523-48 \href{http://dx.doi.org/10.1534/genetics.115.184127}{doi:10.1534/genetics.115.184127}
+\item Franssen, S. U., Barton, N. H., Schl\"otterer, C. (2016). Reconstruction of haplotype-blocks selected during experimental evolution. Mol Biol Evol. 34(1):174-184 
+\href{http://dx.doi.org/10.1093/molbev/msw210}{doi:10.1093/molbev/msw210}
+\item Friedlander, T., Prizak, R., Guet, C. C., Barton, N. H., Tkacik, G. (2016). Intrinsic limits to gene regulation by global crosstalk. Nature Communications, 7, 12307.
+\href{https://doi.org/10.1038/ncomms12307}{DOI: 10.1038/ncomms12307}
+\item Kelleher, J., Etheridge, A. M., Veber, A., Barton, N. H. (2016). Spread of pedigree versus genetic ancestry in spatially distributed populations. Theoretical Population Biology 108. Academic Press.
+\href{https://research-explorer.app.ist.ac.at/record/1631}{DOI: 10.1016/j.tpb.2015.10.008}
+\item Lohse, K., Chmelik, M., Martin, S. H., Barton, N. H. (2016). Efficient strategies for calculating blockwise likelihoods under the coalescent. Genetics 202(2):775-86 
+\href{http://dx.doi.org/10.1534/genetics.115.183814}{doi:10.1534/genetics.115.183814}
+\item Paixao, T., Barton, N. H. (2016). The effect of gene interactions on the long-term response to selection. PNAS, 113(16), 4422–4427.
+\href{https://research-explorer.app.ist.ac.at/record/1359}{DOI: 10.1073/pnas.1518830113}
+\item Barton, N. H., Servedio, M. R. (2015). The interpretation of selection coefficients. Evolution 69: 1101-1112. 
+\href{http://dx.doi.org/10.1111/evo.12641 }{doi:10.1111/evo.12641}
+\item Paixao, T., Badkobeh, G., Barton, N. H., Corus, D., Dang, D., Friedrich, T., Lehre, P. K., Sudholt, D., Sutton, A. M., Trubenova, B. (2015). Toward a unifying framework for evolutionary processes. Journal of Theoretical Biology, 383, 28–43.
+\href{https://research-explorer.app.ist.ac.at/record/1542}{DOI: 10.1016/j.jtbi.2015.07.011}
+\item Polechova, J., Barton, N. H.(2015). Limits to adaptation along environmental gradients. PNAS, 112(20), 6401–6406.
+\href{https://research-explorer.app.ist.ac.at/record/1818}{DOI: 10.1073/pnas.142151511}
+\item Tugrul, M., Paixao, T., Barton, N. H., Tkacik, G. (2015). Dynamics of transcription factor binding site evolution. PLoS Genetics, 11(11).
+\href{https://doi.org/10.1371/journal.pgen.1005639}{DOI: 10.1371/journal.pgen.1005639}
+
+
+\end{enumerate}
+
+
+
+
+%\begin{cvlist}{Teaching Experience}
+
+%\end{cvlist}
+
+\setlength{\oldcvlabelwidth}{\cvlabelwidth}
+\setlength{\cvlabelwidth}{6em}
+
+
+
+
+
+% Reset the label indentation
+%\newpage
+\setlength{\cvlabelwidth}{\oldcvlabelwidth}
+
+
+%\begin{cvlist}{Personal Information}
+%    \item Date of birth:  August 21, 1988\\
+          %Citizenship:  Russia \\
+ %         Languages: English, Russian.
+%\end{cvlist}
+%\begin{cvlist}{Personal Information}
+ %   \item Date of birth:  January 30th, 1986\\
+ %         Citizenship:  Ukraine \\
+ %         Languages: English (fluent), Russian (native), Ukrainian (native), German (basic)
+%\end{cvlist}
+
+%\begin{cvlist}{Personal Interests}
+%\item  Reading, Travelling, Music
+%\end{cvlist}
+%\footskip = -10pt
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{cv}
+\end{document}
+
